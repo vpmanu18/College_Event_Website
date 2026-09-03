@@ -7,7 +7,7 @@ services:
   # ==========================================
   - type: web
     name: kle-techfest-backend
-    runtime: python
+    env: python
     region: singapore
     plan: free
     buildCommand: pip install -r backend/requirements.txt
@@ -31,8 +31,9 @@ services:
   # ==========================================
   # 2. Frontend Static Site (Vite React App)
   # ==========================================
-  - type: static
+  - type: web
     name: kle-techfest-frontend
+    env: static
     region: singapore
     buildCommand: cd frontend && npm install && npm run build
     staticPublishPath: ./frontend/dist
