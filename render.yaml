@@ -1,0 +1,46 @@
+# Render Blueprint Configuration File
+# Documentation: https://render.com/docs/blueprint-spec
+
+services:
+  # ==========================================
+  # 1. Backend Web Service (Flask API)
+  # ==========================================
+  - type: web
+    name: kle-techfest-backend
+    runtime: python
+    region: singapore
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: gunicorn backend.app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: PYTHONPATH
+        value: .
+      - key: FLASK_ENV
+        value: production
+      - key: FLASK_SECRET_KEY
+        generateValue: true
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false
+      - key: SUPABASE_SERVICE_KEY
+        sync: false
+
+  # ==========================================
+  # 2. Frontend Static Site (Vite React App)
+  # ==========================================
+  - type: static
+    name: kle-techfest-frontend
+    region: singapore
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: ./frontend/dist
+    routes:
+      # Single Page Application (SPA) fallback routing
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_URL
+        sync: false

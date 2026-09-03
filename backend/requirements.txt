@@ -5,3 +5,5 @@ python-dotenv==1.0.1
 requests==2.32.3
 postgrest==0.16.5
 gotrue==2.5.0
+gunicorn==22.0.0
+
