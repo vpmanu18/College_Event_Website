@@ -143,7 +143,7 @@ def dashboard():
                 "event_slug": event_details.get('slug', ''),
                 "event_name": reg['event_name'],
                 "registered_at": reg['registered_at'],
-                "event_date": event_details.get('event_date', '2026-11-13'),
+                "event_date": event_details.get('event_date', '2027-02-18'),
                 "event_time": event_details.get('event_time', '9:00 AM'),
                 "venue": event_details.get('location', 'KLE BCA College, Gangavathi'),
                 "status": "Confirmed"

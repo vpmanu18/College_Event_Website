@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 export const Countdown = () => {
-  const targetDate = new Date('2026-11-13T09:00:00+05:30'); // Event starts at 9:00 AM IST on Nov 13, 2026
+  const targetDate = new Date('2027-02-18T09:00:00+05:30'); // Event starts at 9:00 AM IST on Feb 18, 2027
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,

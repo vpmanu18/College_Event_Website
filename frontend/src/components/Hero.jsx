@@ -143,7 +143,7 @@ export const Hero = () => {
             border: '1px solid rgba(0,240,255,0.15)'
           }}>
             <Calendar size={16} style={{ color: 'var(--color-cyan)' }} />
-            <span style={{ fontSize: '0.9rem', fontWeight: '600' }}>13 NOVEMBER 2026</span>
+            <span style={{ fontSize: '0.9rem', fontWeight: '600' }}>18 FEBRUARY 2027</span>
           </div>
 
           <div className="glass-panel" style={{

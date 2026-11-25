@@ -45,7 +45,7 @@ export const Footer = () => {
             maxWidth: '320px',
             lineHeight: '1.6'
           }}>
-            Igniting technological potential and coding prowess in BCA, B.Sc, and B.Com education. Join us on November 13, 2026.
+            Igniting technological potential and coding prowess in BCA, B.Sc, and B.Com education. Join us on February 18, 2027.
           </p>
         </div>
 

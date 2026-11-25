@@ -56,7 +56,7 @@ export const LocationCard = () => {
               </div>
               <div>
                 <span style={{ display: 'block', fontSize: '0.75rem', fontWeight: '700', color: 'var(--text-muted)' }}>DATE</span>
-                <span style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--text-main)' }}>13 November 2026</span>
+                <span style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--text-main)' }}>18 February 2027</span>
               </div>
             </div>
 

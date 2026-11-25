@@ -22,7 +22,7 @@ events = [
         "description": "A 24-hour intense coding sprint where teams collaborate to build innovative technological solutions for real-world problems.",
         "location": "Auditorium",
         "event_time": "9:00 AM",
-        "event_date": "2026-11-13",
+        "event_date": "2027-02-18",
         "participant_limit": 50,
         "category": "coding"
     },
@@ -32,7 +32,7 @@ events = [
         "description": "Test your muscle memory and syntactical command by writing functional programs with your monitors turned completely off.",
         "location": "Auditorium",
         "event_time": "9:00 PM",
-        "event_date": "2026-11-13",
+        "event_date": "2027-02-18",
         "participant_limit": 50,
         "category": "coding"
     },
@@ -42,7 +42,7 @@ events = [
         "description": "Sleuth through code bases, trace stack traces, fix compile errors, and optimize broken algorithms against a ticking clock.",
         "location": "B.Com 3rd Year Classroom",
         "event_time": "11:00 AM",
-        "event_date": "2026-11-13",
+        "event_date": "2027-02-18",
         "participant_limit": 50,
         "category": "debugging"
     },
@@ -52,7 +52,7 @@ events = [
         "description": "Solve complex algorithm challenges and data structure problems. Optimize for time and space complexity to top the leaderboard.",
         "location": "BCA 2nd Year Classroom",
         "event_time": "9:00 AM",
-        "event_date": "2026-11-13",
+        "event_date": "2027-02-18",
         "participant_limit": 50,
         "category": "coding"
     },
@@ -62,7 +62,7 @@ events = [
         "description": "Crack technical riddles, decipher cryptographic clues, and navigate around campus to find the hidden treasure.",
         "location": "KLE Hall",
         "event_time": "1:00 PM",
-        "event_date": "2026-11-13",
+        "event_date": "2027-02-18",
         "participant_limit": 50,
         "category": "challenge"
     },
@@ -72,7 +72,7 @@ events = [
         "description": "A design challenge where participants craft visual aesthetics and layout prototypes for dynamic web applications within a strict timeline.",
         "location": "BCA 1st Year Classroom",
         "event_time": "10:30 AM",
-        "event_date": "2026-11-13",
+        "event_date": "2027-02-18",
         "participant_limit": 40,
         "category": "challenge"
     },
@@ -82,7 +82,7 @@ events = [
         "description": "Put your database queries to the test to investigate schemas, join tables, and filter records to solve a complex murder case.",
         "location": "Computer Lab 1",
         "event_time": "2:00 PM",
-        "event_date": "2026-11-13",
+        "event_date": "2027-02-18",
         "participant_limit": 30,
         "category": "debugging"
     },
@@ -92,7 +92,7 @@ events = [
         "description": "Go keyboard-to-keyboard in high-stakes elimination rounds to prove your words-per-minute speed and character accuracy.",
         "location": "Seminar Hall",
         "event_time": "11:30 AM",
-        "event_date": "2026-11-13",
+        "event_date": "2027-02-18",
         "participant_limit": 64,
         "category": "challenge"
     },
@@ -102,7 +102,7 @@ events = [
         "description": "Write functional programs using the fewest characters possible. Test your syntax efficiency and creative logic.",
         "location": "B.Com 1st Year Classroom",
         "event_time": "3:30 PM",
-        "event_date": "2026-11-13",
+        "event_date": "2027-02-18",
         "participant_limit": 40,
         "category": "coding"
     },
@@ -112,7 +112,7 @@ events = [
         "description": "Manipulate large language models through structured prompts to solve coding queries, debug files, and produce clean code output.",
         "location": "Computer Lab 2",
         "event_time": "4:00 PM",
-        "event_date": "2026-11-13",
+        "event_date": "2027-02-18",
         "participant_limit": 50,
         "category": "coding"
     },
@@ -122,7 +122,7 @@ events = [
         "description": "A cybersecurity competition where teams find flags hidden in vulnerable services, cryptosystems, and reverse engineered binaries.",
         "location": "Seminar Hall",
         "event_time": "10:00 AM",
-        "event_date": "2026-11-13",
+        "event_date": "2027-02-18",
         "participant_limit": 30,
         "category": "challenge"
     },
@@ -132,7 +132,7 @@ events = [
         "description": "Clean up bloated, unreadable, and nested legacy code bases to make them modular, fast, and testable without altering output behavior.",
         "location": "BCA 3rd Year Classroom",
         "event_time": "1:30 PM",
-        "event_date": "2026-11-13",
+        "event_date": "2027-02-18",
         "participant_limit": 50,
         "category": "debugging"
     }

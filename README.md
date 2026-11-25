@@ -70,7 +70,7 @@ CREATE TABLE events (
     description TEXT NOT NULL,
     location TEXT NOT NULL,
     event_time TEXT NOT NULL,
-    event_date TEXT NOT NULL DEFAULT '2026-11-13',
+    event_date TEXT NOT NULL DEFAULT '2027-02-18',
     image TEXT,
     participant_limit INTEGER,
     category TEXT NOT NULL, -- coding, debugging, challenge
@@ -102,11 +102,11 @@ CREATE TABLE contacts (
 -- Seed initial events
 INSERT INTO events (name, slug, description, location, event_time, event_date, category)
 VALUES
-('Hackathon', 'hackathon', 'A 24-hour intense coding sprint where teams collaborate to build innovative technological solutions for real-world problems.', 'Auditorium', '9:00 AM', '2026-11-13', 'coding'),
-('Blind Coding', 'blind-coding', 'Test your muscle memory and syntactical command by writing functional programs with your monitors turned completely off.', 'Auditorium', '9:00 PM', '2026-11-13', 'coding'),
-('Error Debugging', 'error-debugging', 'Sleuth through code bases, trace stack traces, fix compile errors, and optimize broken algorithms against a ticking clock.', 'B.Com 3rd Year Classroom', '11:00 AM', '2026-11-13', 'debugging'),
-('DSA Coding', 'dsa-coding', 'Solve complex algorithm challenges and data structure problems. Optimize for time and space complexity to top the leaderboard.', 'BCA 2nd Year Classroom', '9:00 AM', '2026-11-13', 'coding'),
-('Treasure Hunt', 'treasure-hunt', 'Crack technical riddles, decipher cryptographic clues, and navigate around campus to find the hidden treasure.', 'KLE Hall', '1:00 PM', '2026-11-13', 'challenge')
+('Hackathon', 'hackathon', 'A 24-hour intense coding sprint where teams collaborate to build innovative technological solutions for real-world problems.', 'Auditorium', '9:00 AM', '2027-02-18', 'coding'),
+('Blind Coding', 'blind-coding', 'Test your muscle memory and syntactical command by writing functional programs with your monitors turned completely off.', 'Auditorium', '9:00 PM', '2027-02-18', 'coding'),
+('Error Debugging', 'error-debugging', 'Sleuth through code bases, trace stack traces, fix compile errors, and optimize broken algorithms against a ticking clock.', 'B.Com 3rd Year Classroom', '11:00 AM', '2027-02-18', 'debugging'),
+('DSA Coding', 'dsa-coding', 'Solve complex algorithm challenges and data structure problems. Optimize for time and space complexity to top the leaderboard.', 'BCA 2nd Year Classroom', '9:00 AM', '2027-02-18', 'coding'),
+('Treasure Hunt', 'treasure-hunt', 'Crack technical riddles, decipher cryptographic clues, and navigate around campus to find the hidden treasure.', 'KLE Hall', '1:00 PM', '2027-02-18', 'challenge')
 ON CONFLICT (slug) DO NOTHING;
 ```
 

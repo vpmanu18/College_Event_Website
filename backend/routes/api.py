@@ -344,7 +344,7 @@ def chat_ai():
         # 5. Check for general info about KLE Society College or tech fest venue/date
         elif any(w in user_message for w in ["kle", "college", "where is", "location", "venue", "gangavathi", "date"]):
             if "date" in user_message or "when" in user_message:
-                reply = "The Grand Tech Fest is scheduled to take place on **November 13, 2026**! Set your timers and prepare for a technological showdown. 📅"
+                reply = "The Grand Tech Fest is scheduled to take place on **February 18, 2027**! Set your timers and prepare for a technological showdown. 📅"
             else:
                 reply = "The Tech Fest is hosted by **KLE Society's Degree College, Gangavathi**. Most events take place in the Seminar Hall, Auditorium, BCA Classrooms, and Computer Labs. 📍"
 

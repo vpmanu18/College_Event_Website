@@ -240,7 +240,9 @@ export const EventDetails = () => {
                 <Calendar size={18} style={{ color: 'var(--color-cyan)' }} />
                 <div>
                   <span style={{ display: 'block', fontSize: '0.7rem', color: 'var(--text-dim)' }}>DATE</span>
-                  <span style={{ fontSize: '0.9rem', color: 'var(--text-main)', fontWeight: '600' }}>13 Nov 2026</span>
+                  <span style={{ fontSize: '0.9rem', color: 'var(--text-main)', fontWeight: '600' }}>
+                    {event.event_date ? new Date(event.event_date).toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' }) : '18 Feb 2027'}
+                  </span>
                 </div>
               </div>
               <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
