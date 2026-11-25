@@ -175,3 +175,40 @@ The client dashboard will open on `http://localhost:5173`.
 - **Credential Separation**: Secrets like `SUPABASE_SERVICE_KEY` are kept strictly in backend `.env` variables and never packaged to client builds.
 - **Input Sanitation**: Emails and phones are validated against regex models before database insertions.
 - **Duplicate Prevention**: Row indexes prevent users from registering multiple times for the same event category.
+
+---
+
+## Deployment Guides
+
+### Option 1: Deploy on Render (Full Stack via render.yaml)
+
+1. Push your latest code to GitHub.
+2. Sign in to **[dashboard.render.com](https://dashboard.render.com)**.
+3. Click **New +** $\rightarrow$ **Blueprint**.
+4. Connect your GitHub repository (`College_Event_Website`).
+5. Render reads `render.yaml` and sets up two services:
+   - **`kle-techfest-backend`** (Web Service):
+     - Under **Environment**, add the external secrets:
+       - `SUPABASE_URL`: Your Supabase URL (`https://<project-ref>.supabase.co`)
+       - `SUPABASE_ANON_KEY`: Your Supabase Anon Public Key
+       - `SUPABASE_SERVICE_KEY`: Your Supabase Service Role Key
+   - **`kle-techfest-frontend`** (Static Site):
+     - Under **Environment**, set:
+       - `VITE_API_URL`: `https://kle-techfest-backend.onrender.com/api`
+6. Click **Apply**. Both your backend API and frontend site will build and deploy automatically!
+
+---
+
+### Option 2: Deploy on Streamlit Community Cloud (100% Free Hosting)
+
+1. Sign in to **[share.streamlit.io](https://share.streamlit.io)** with GitHub.
+2. Click **Create app**.
+3. Select your repository: `vpmanu18/College_Event_Website`.
+4. Set **Main file path**: `streamlit_app.py`.
+5. Under **Advanced settings** $\rightarrow$ **Secrets**, paste your Supabase keys:
+   ```toml
+   SUPABASE_URL = "https://your-project.supabase.co"
+   SUPABASE_KEY = "your-anon-or-service-role-key"
+   ```
+6. Click **Deploy!**
+   - Your live event portal, registration database viewer, and CSV exporter are now hosted 24/7 on Streamlit Cloud for free!

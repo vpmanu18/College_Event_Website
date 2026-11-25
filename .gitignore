@@ -7,6 +7,10 @@
 *.env
 !.env.example
 
+# Streamlit secrets (NEVER commit secrets to Git)
+.streamlit/secrets.toml
+.streamlit/secrets.json
+
 # ==========================================
 # Dependencies
 # ==========================================
